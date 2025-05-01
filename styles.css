@@ -286,7 +286,7 @@ h1 {
 
 .articles-list li:not(:last-child) {
   padding-bottom: 1.8rem;
-  border-bottom: 1px solid #c5c6ce;
+  border-bottom: 1px solid #5e607a;
 }
 
 .new-article {
@@ -313,6 +313,70 @@ h1 {
   color: #c5c6ce;
   font-size: 0.9375rem;
   line-height: 173.333%;
+}
+
+.top-articles ol {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.top-story {
+  display: flex;
+  gap: 1rem;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 7rem;
+  height: 8rem;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.top-story-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.article-number {
+  color: var(--light-vermilion);
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 100%;
+  margin-bottom: 0.25rem;
+}
+
+.top-story-link {
+  text-decoration: none;
+  color: var(--dark-space-blue);
+  font-size: 1.125rem;
+  font-weight: 800;
+  line-height: 133.333%;
+  text-wrap: wrap;
+}
+
+.top-story-link:hover {
+  color: var(--light-vermilion);
+  transition: all 0.3s ease-in-out;
+}
+
+.top-story-container p {
+  color: var(--gunmetal);
+  font-size: 0.9375rem;
+  line-height: 173.333%;
+  text-wrap: wrap;
 }
 
 @media (max-width: 48rem) {
