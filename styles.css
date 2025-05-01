@@ -84,7 +84,7 @@ body {
   font-family: "Inter", sans-serif;
   position: relative;
   overflow-x: hidden;
-  padding: 25px 40px;
+  padding: 25px 16px;
 }
 
 header {
@@ -202,6 +202,44 @@ header {
   border: 0;
   white-space: nowrap;
   clip-path: inset(50%);
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.page-intro-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.page-intro-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+h1 {
+  color: var(--dark-space-blue);
+  font-size: clamp(2.5rem, 4vw + 1rem, 3.5rem);
+  font-weight: 800;
+  text-wrap: wrap;
+  line-height: 100%;
+}
+
+.page-intro-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.main-description-text {
+  color: var(--gunmetal);
+  font-size: 0.9375rem;
+  line-height: 173.333%;
+  text-wrap: wrap;
 }
 
 @media (max-width: 48rem) {
