@@ -53,7 +53,6 @@
     </header>
 
     <nav id="mobile-sidebar" class="mobile-sidebar" aria-hidden="true">
-      
       <button class="mobile-menu-close-button" aria-label="Close menu">
         <svg width="32" height="31" xmlns="http://www.w3.org/2000/svg">
           <g fill="#00001A" fill-rule="evenodd">
@@ -74,6 +73,40 @@
 
     <div class="overlay" aria-hidden="true"></div>
 
-    <main></main>
+    <main>
+      <article aria-labelledby="featured-title">
+        <picture>
+          <source
+            srcset="./assets/images/image-web-3-mobile.jpg"
+            media="(max-width: 48rem)"
+          />
+          <source
+            srcset="./assets/images/image-web-3-desktop.jpg"
+            media="(min-width: 48rem)"
+          />
+          <img
+            src="./assets/images/image-web-3-mobile.jpg"
+            alt="Abstract colorful 3D block shapes"
+          />
+        </picture>
+        <div>
+          <h1 id="featured-title">The Bright Future of Web 3.0?</h1>
+          <div>
+            <p class="main-description-text">
+              We dive into the next evolution of the web that claims to put the
+              power of the platforms back into the hands of the people. But is
+              it really fulfilling its promise?
+            </p>
+            <a
+              href="#"
+              aria-label="Read More about The Bright Future of Web 3.0?"
+              >Read More</a
+            >
+          </div>
+        </div>
+      </article>
+
+      
+    </main>
   </body>
 </html>
