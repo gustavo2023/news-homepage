@@ -150,7 +150,7 @@ header {
 
 .mobile-sidebar ul {
   list-style: none;
-  margin: 5.39rem 0 0 0;
+  margin: 5.39rem 0 0 1.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
