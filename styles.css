@@ -207,6 +207,7 @@ header {
 main {
   display: grid;
   grid-template-columns: 1fr;
+  gap: 4rem;
 }
 
 .page-intro-section {
@@ -252,7 +253,7 @@ h1 {
   cursor: pointer;
   background-color: var(--light-vermilion);
   padding: 0.81rem 0;
-  width: 60%;
+  width: 11.5625rem;
   text-align: center;
 }
 
@@ -260,6 +261,58 @@ h1 {
   background-color: var(--dark-space-blue);
   color: var(--almost-white);
   transition: all 0.3s ease-in-out;
+}
+
+.new-articles {
+  display: flex;
+  flex-direction: column;
+  gap: 2.19rem;
+  padding: 1.5rem 1.25rem;
+  background-color: var(--dark-space-blue);
+}
+
+.new-articles h2 {
+  color: #e9aa52;
+  font-size: clamp(2rem, 4vw + 1rem, 2.5rem);
+  font-weight: 700;
+  line-height: 100%;
+}
+
+.articles-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.9rem;
+}
+
+.articles-list li:not(:last-child) {
+  padding-bottom: 1.8rem;
+  border-bottom: 1px solid #c5c6ce;
+}
+
+.new-article {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.new-article-link {
+  text-decoration: none;
+  color: var(--almost-white);
+  font-size: 1.25rem;
+  font-weight: 800;
+  line-height: 120%;
+  text-wrap: wrap;
+}
+
+.new-article-link:hover {
+  color: #e9aa52;
+  transition: all 0.3s ease-in-out;
+}
+
+.new-article p {
+  color: #c5c6ce;
+  font-size: 0.9375rem;
+  line-height: 173.333%;
 }
 
 @media (max-width: 48rem) {
