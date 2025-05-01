@@ -242,6 +242,26 @@ h1 {
   text-wrap: wrap;
 }
 
+.page-intro-content a {
+  text-decoration: none;
+  color: var(--dark-space-blue);
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 171.429%;
+  letter-spacing: 0.27344rem;
+  cursor: pointer;
+  background-color: var(--light-vermilion);
+  padding: 0.81rem 0;
+  width: 60%;
+  text-align: center;
+}
+
+.page-intro-content a:hover {
+  background-color: var(--dark-space-blue);
+  color: var(--almost-white);
+  transition: all 0.3s ease-in-out;
+}
+
 @media (max-width: 48rem) {
   .desktop-nav {
     display: none;
