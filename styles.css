@@ -390,11 +390,47 @@ h1 {
 }
 
 @media (min-width: 48rem) {
+  body {
+    padding: 30px 40px;
+  }
   .mobile-sidebar {
     display: none;
   }
 
   .overlay {
     display: none;
+  }
+
+  main {
+    grid-template-columns: 2fr 1fr;
+    gap: 0;
+  }
+
+  .page-intro-section,
+  .new-articles {
+    margin-bottom: 4.5rem;
+  }
+
+  .page-intro-section {
+    margin-right: 1.9rem;
+  }
+
+  .page-intro-text-container {
+    flex-direction: row;
+  }
+
+  .top-articles {
+    grid-column: 1 / -1;
+  }
+
+  .top-articles ol {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .top-story-container p {
+    padding-right: 2.2rem;
   }
 }
