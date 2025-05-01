@@ -189,3 +189,23 @@ header {
   visibility: visible;
   transition: opacity 0.3s ease-in-out;
 }
+
+@media (max-width: 48rem) {
+  .desktop-nav {
+    display: none;
+  }
+
+  .mobile-menu-open-button {
+    display: block;
+  }
+}
+
+@media (min-width: 48rem) {
+  .mobile-sidebar {
+    display: none;
+  }
+
+  .overlay {
+    display: none;
+  }
+}
