@@ -79,4 +79,34 @@ textarea:not([rows]) {
   --light-vermilion: #f15d51;
 }
 
+body {
+  background-color: var(--almost-white);
+  font-family: "Inter", sans-serif;
+  position: relative;
+  overflow-x: hidden;
+  padding: 15px 20px;
+}
 
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.desktop-nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2.5rem;
+  list-style: none;
+}
+
+.desktop-nav a {
+  text-decoration: none;
+  color: var(--gunmetal);
+}
+
+.desktop-nav a:hover {
+  color: var(--light-vermilion);
+  transition: all 0.3s ease-in-out;
+}
